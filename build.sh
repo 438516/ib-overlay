@@ -27,7 +27,7 @@ BASE_PACKAGES="$BASE_PACKAGES luci-i18n-filemanager-zh-cn"
 #BASE_PACKAGES="$BASE_PACKAGES luci-i18n-openlist-zh-cn"
 
 #打印机相关
-BASE_PACKAGES="$BASE_PACKAGES luci-i18n-p910nd-zh-cn"
+#BASE_PACKAGES="$BASE_PACKAGES luci-i18n-p910nd-zh-cn"
 #BASE_PACKAGES="$BASE_PACKAGES luci-i18n-openvpn-zh-cn"
 
 
@@ -117,5 +117,5 @@ fi
 # 例如files/mnt对应覆盖openwrt系统/mnt目录中的文件 
 OUTPUT_DIR=$(pwd)/output
 mkdir -p $OUTPUT_DIR
-make image PROFILE=generic PACKAGES="$PACKAGES"  FILES=files ROOTFS_PARTSIZE=1024 BIN_DIR=$OUTPUT_DIR
+make image PROFILE=generic PACKAGES="$PACKAGES"  FILES=files ROOTFS_PARTSIZE=3000 BIN_DIR=$OUTPUT_DIR
 ls -lah $OUTPUT_DIR
